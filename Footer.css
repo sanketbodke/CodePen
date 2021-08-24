@@ -1,11 +1,12 @@
 
-
 .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background: #263238;
     text-align: center;
     color: #f4f4f4;
-    position: relative;
-    margin-top: 25rem;
 }
 
 .icons{
@@ -22,7 +23,6 @@
 .company-name{
     font-size: 1.6rem;
     margin-top: 0.5rem;
-    padding-bottom: 1rem;
 }
 
 @media (max-width: 500px){
