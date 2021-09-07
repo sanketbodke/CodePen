@@ -36,6 +36,7 @@
 
 .content img {
   width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img-content {
@@ -100,6 +101,7 @@
 
 .content-2 img {
   width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img-content-2 {
@@ -164,6 +166,7 @@
 
 .content-3 img {
   width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img-content-3 {
@@ -229,6 +232,7 @@
 
 .content-4 img {
   width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .img-content-4 {
@@ -270,7 +274,7 @@
 
 /* //......media query....../// */
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   html {
     font-size: 80%;
   }
