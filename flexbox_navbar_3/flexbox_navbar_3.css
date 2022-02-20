@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  height: 64px;
+  background-color: #24252a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.logo {
+  color: #edf0f1;
+  margin-left: auto;
+  cursor: pointer;
+  order: 3;
+}
+
+nav {
+  order: 1;
+}
+
+.cta {
+  order: 2;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li:nth-child(1) {
+  padding: 0 20 0 0;
+}
+
+.nav-links li a {
+  transition: all ease-in-out 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
