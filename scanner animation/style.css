@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    padding: 200px;
+}
+
+.scanner h1 {
+    color: #252839;
+    font-size: 4rem;
+    position: absolute;
+}
+
+.scanner h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid blue;
+    box-shadow: 0 0 10px blue;
+    overflow: hidden;
+    color: blue;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+    60%,
+    80% {
+        width: 100%;
+    }
+}

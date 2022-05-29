@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 2.3rem;
+}
+
+.content {
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 2;
+    opacity: 0;
+}
+
+.content:hover::after {
+    opacity: 1;
+}
+
+.content img {
+    width: 100%;
+    height: 380px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.img-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    z-index: 5;
+    opacity: 0;
+}
+
+.img-content p {
+    font-size: 1.9rem;
+    margin-bottom: .6rem;
+}
+
+.img-content button {
+    background: #fff;
+    border-radius: 10px;
+    outline: none;
+    padding: 6px;
+    width: 150px;
+    height: 50px;
+}
+
+.img-content a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    transition: 0.3s;
+}
+
+
+/* .img-content a:hover {
+    color: rgb(95, 199, 95);
+} */
+
+.content:hover .img-content {
+    opacity: 1;
+    top: 50%;
+}
+
+
+/* //......media query....../// */
+
+@media (max-width: 650px) {
+    html {
+        font-size: 60%;
+    }
+}
