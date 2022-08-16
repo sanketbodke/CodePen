@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #000;
+}
+
+p {
+    transform: translateX(-0.75em);
+    transition: transform 200ms;
+    cursor: pointer;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+p::before {
+    content: 'code.';
+    display: inline-block;
+    width: 2.6em;
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+p:hover {
+    transform: none;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+p:hover::before {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
