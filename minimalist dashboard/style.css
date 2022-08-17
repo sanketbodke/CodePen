@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+:root {
+    /* //....... Color ........// */
+    --light-black: rgba(0, 0, 0, 0.89);
+    --black: #000;
+    --white: #fff;
+    --white-grey: #f4f8fb;
+    --grey: #aaa;
+    --button-color: #543aff;
+}
+
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+}
+
+.left-sidebar {
+    flex-basis: 20%;
+    padding: 20px;
+    background: var(--white);
+}
+
+.left-sidebar p {
+    display: inline-block;
+}
+
+
+/* ........ Main Content........ */
+
+.main-content {
+    flex-basis: 80%;
+    background: var(--white-grey);
+    padding: 20px 60px;
+}
+
+.main-content nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.main-content nav button {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    background: var(--button-color);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-content nav input[type="text"] {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: none;
+    width: 350px;
+    outline: none;
+    border: none;
+}
+
+.main-content nav .bell,
+.main-content nav .settings {
+    display: inline-block;
+    background: var(--white);
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.main-content nav .bell i,
+.main-content nav .settings i {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+
+/* ........ order status ........ */
+
+.order-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .order-status .order-on-progress {
+    background: var(--white);
+    width: 280px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.main-content .icon-and-dots {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .pcs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .icon-and-dots i {
+    font-size: 24px;
+}
