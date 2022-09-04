@@ -8,7 +8,7 @@
 
 .hero{
   width: 80%;
-  height: 450px;
+  height: 100vh;
   position: relative;
   margin: 100px auto;
   overflow: hidden;
@@ -34,11 +34,7 @@
 }
 
 .btn-box button:hover .bx{
-  color: #ff7846;
-}
-
-.content-right img {
-  width: 350px;
+  color: #27a5db;
 }
 
 .content{
@@ -50,28 +46,19 @@
   transform: translateX(100%);
 }
 
-.content-left{
-  flex-basis: 50%;
-}
-
-.content-left p{
-  font-size: 13px;
+.tab-content p{
+  font-size: 16px;
   padding: 30px 0;
 }
 
-.content-left a{
+.tab-content a{
   width: 150px;
   display: block;
   padding: 8px 5px;
   border-radius:20px;
   text-decoration: none;
-  background-color: #ff7846;
+  background-color: #27a5db;
   color: #fff;
-  text-align: center;
-}
-
-.content-right{
-  flex-basis: 50%;
   text-align: center;
 }
 
@@ -80,16 +67,5 @@
 }
 
 #btn1{
-  color: #ff7846;
-}
-
-@media(min-width: 300px) and (max-width: 768px){
-  .content{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-right,.content-left{
-    flex-basis: 100%;
-  }
+  color: #27a5db;
 }

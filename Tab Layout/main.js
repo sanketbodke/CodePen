@@ -10,7 +10,7 @@ function openHTML() {
   content1.style.transform = "translateX(0)";
   content2.style.transform = "translateX(100%)";
   content3.style.transform = "translateX(100%)";
-  btn1.style.color = "#ff7846";
+  btn1.style.color = "#27a5db";
   btn2.style.color = "#000";
   btn3.style.color = "#000";
 }
@@ -19,7 +19,7 @@ function openCSS() {
   content2.style.transform = "translateX(0)";
   content3.style.transform = "translateX(100%)";
   btn1.style.color = "#000";
-  btn2.style.color = "#ff7846";
+  btn2.style.color = "#27a5db";
   btn3.style.color = "#000";
 }
 function openJS() {
@@ -28,5 +28,5 @@ function openJS() {
   content3.style.transform = "translateX(0)";
   btn1.style.color = "#000";
   btn2.style.color = "#000";
-  btn3.style.color = "#ff7846";
+  btn3.style.color = "#27a5db";
 }
