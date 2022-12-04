@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+  width: 80%;
+  height: 100vh;
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.btn-box{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-box button{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-box .bx{
+  margin-right: 20px;
+}
+
+.btn-box button:hover .bx{
+  color: #27a5db;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  position: absolute;
+  transform: translateX(100%);
+}
+
+.tab-content p{
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+.tab-content a{
+  width: 150px;
+  display: block;
+  padding: 8px 5px;
+  border-radius:20px;
+  text-decoration: none;
+  background-color: #27a5db;
+  color: #fff;
+  text-align: center;
+}
+
+#content1{
+  transform:translateX(0px);
+}
+
+#btn1{
+  color: #27a5db;
+}
