@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Search Engine/Bar/Filter</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+  <div class="container">
+    <div class="search_box">
+      <i class='bx bx-search-alt-2'></i>
+      <input type="text" placeholder="Search Products" ng-model="search">
+    </div>
+    <div class="products">
+      <div class="product">
+        <div class="product_content" ng-repeat="product in products | filter:search">
+          <img src="https://media.istockphoto.com/id/1449291491/photo/shopping-cart.jpg?b=1&s=170667a&w=0&k=20&c=0GByRzm2UGEoBPVWhqN_s-F11maFkNU2PQeYcMjyE1c=" alt="img">
+          <p>{{product}} <span> &dollar;25 </span> </p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
