@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ***----- Navbar -----*** */
+
+nav {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
+}
+
+header {
+    background: url("https://i.postimg.cc/66DNhtJ7/image.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container .menu_items ul {
+    display: flex;
+    gap: 50px;
+}
+
+.nav_container .logo h2 {
+    font-size: 28px;
+}
+
+.nav_container a {
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    font-weight: 500;
+}
+
+.nav_container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    height: 3px;
+    background: #000000bc;
+    transition: 0.4s;
+}
+
+.nav_container a:hover::after {
+    width: 100%;
+}
+
+.nav_container .login button {
+    background: pink;
+    padding: 5px 15px;
+    border-radius: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav_container button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px 10px;
+    transition: 0.1s;
+}
+
+.nav_container button:hover:after {
+    content: "Login";
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ***----- Home -----*** */
+
+.home-content {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+}
+
+
+/* .home-content h1 {} */
+
+.home-content button {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: pink;
+    padding: 5px 15px;
+    border-radius: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+}
+
+.home-content button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px 10px;
+    transition: 0.1s;
+}
+
+.home-content button:hover:after {
+    content: "show Now";
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

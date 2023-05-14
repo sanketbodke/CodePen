@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    color: #000;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .nav_container .logo img {
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+} */
+
+.nav_container .menu_items {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.nav_container .menu_items a {
+    position: relative;
+}
+
+.nav_container .menu_items a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    height: 3px;
+    background: #cd977c;
+    transition: .3s;
+}
+
+.nav_container .menu_items a:hover::after {
+    width: 100%;
+}
+
+.nav_container .login_btn button {
+    font-size: 16px;
+    border: 2px solid #000;
+    padding: 8px 15px;
+    border-radius: 10px;
+    position: relative;
+    border: none;
+}
+
+.nav_container .login_btn button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+
+.nav_container .login_btn button:hover::after {
+    content: "Login";
+    width: 100%;
+    background: #cd977c;
+    color: #fff;
+    border: 2px solid #cd977c;
+    border-radius: 10px;
+}
+
+
+/* ---------- home page ----------  */
+
+.home_content .home_img img {
+    width: 100%;
+    height: 97vh;
+    position: relative;
+}
+
+.home_content .home_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home_content .home_text span {
+    font-size: 28px;
+    color: #cd977c;
+    font-weight: bold;
+}
+
+
+/* ---------- Category ----------  */
+
+.categorys .section_title {
+    color: #cd977c;
+    text-align: center;
+    margin: 60px 0;
+    font-size: 32px;
+}
+
+.categorys .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 5px;
+}
+
+.content {
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    z-index: 2;
+    opacity: 0;
+}
+
+.content:hover::after {
+    opacity: 1;
+}
+
+.content img {
+    width: 100%;
+}
+
+.img-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    z-index: 5;
+    opacity: 0;
+}
+
+.img-content p {
+    font-size: 1.9rem;
+}
+
+.img-content a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.3s;
+    border: 2px solid rgb(95, 199, 95);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img-content a:hover {
+    background: rgb(95, 199, 95);
+    color: #fff;
+}
+
+.content:hover .img-content {
+    opacity: 1;
+    left: 50%;
+}
