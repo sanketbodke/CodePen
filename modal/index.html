@@ -5,22 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML || CSS Modal</title>
+    <title>Modal</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="btn">
-            <button>Click Me</button>
+    <button class="btn">Open Modal</button>
+    <div class="modal_content">
+        <div class="close_btn">
+            <i class='bx bxs-x-circle'></i>
         </div>
-        <div class="modal">
-            <div class="payment">
-
-            </div>
+        <div class="modal_title">
+            <h2>ABC</h2>
+        </div>
+        <div class="modal_info">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores itaque inventore dignissimos suscipit delectus, ipsa repellat minima et vitae perspiciatis quasi unde earum corporis labore at in temporibus repudiandae totam?</p>
         </div>
     </div>
-
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('.modal_content').css('display', 'block');
+            })
+            $('.close_btn').click(function() {
+                $('.modal_content').css('display', 'none');
+            })
+        });
+    </script>
 </body>
 
 </html>
