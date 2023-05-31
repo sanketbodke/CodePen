@@ -1,7 +1,8 @@
-var modal = document.querySelector('.modal_content');
-var close = document.querySelector('.close_btn');
-var button = document.querySelector('.btn');
-
-// button.style.color = "red";
-
-// function open_modal() {}
+$(document).ready(function() {
+    $('button').click(function() {
+        $('.modal_content').css('display', 'block');
+    })
+    $('.close_btn').click(function() {
+        $('.modal_content').css('display', 'none');
+    })
+});
