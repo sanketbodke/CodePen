@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background-image: linear-gradient(to right, #ff4b4b, #d12280);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #ff4b4b, #d12280);
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {}
